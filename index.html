@@ -3,40 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aquarist App - Support</title>
+    <title>Aquarist - Aquarium Tracker & Log</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0a; color: #e0e0e0; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 24px; }
         .container { max-width: 480px; width: 100%; text-align: center; }
-        .logo { width: 80px; height: 80px; border-radius: 20px; margin-bottom: 24px; }
-        h1 { color: #5eead4; font-size: 28px; margin-bottom: 8px; letter-spacing: 1px; }
-        .subtitle { color: #999; font-size: 14px; margin-bottom: 40px; }
-        h2 { color: #5eead4; font-size: 18px; margin-bottom: 16px; }
+        h1 { color: #5eead4; font-size: 36px; margin-bottom: 8px; letter-spacing: 1px; }
+        .subtitle { color: #999; font-size: 15px; margin-bottom: 40px; }
+        .features { text-align: left; margin-bottom: 32px; }
+        .feature { background: #1a1a1a; border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; display: flex; align-items: center; gap: 14px; }
+        .feature-icon { font-size: 24px; flex-shrink: 0; }
+        .feature-text { color: #bbb; font-size: 14px; line-height: 1.5; }
+        .feature-text strong { color: #e0e0e0; }
+        .badges { display: flex; justify-content: center; gap: 12px; margin-bottom: 32px; }
+        .badge { display: inline-block; background: #1a1a1a; border: 1px solid #333; border-radius: 10px; padding: 10px 20px; color: #999; font-size: 13px; }
+        .links { margin-top: 32px; }
+        .links a { color: #5eead4; text-decoration: none; font-size: 14px; margin: 0 10px; }
+        .links a:hover { text-decoration: underline; }
+        .divider { color: #333; }
         p { color: #bbb; font-size: 15px; line-height: 1.6; margin-bottom: 24px; }
         a { color: #5eead4; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .contact { background: #1a1a1a; border-radius: 12px; padding: 24px; margin-top: 32px; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Aquarist</h1>
-        <p class="subtitle">Aquarium Tracker & Log</p>
+        <p class="subtitle">Your personal aquarium companion</p>
 
-        <p>Aquarist is a personal aquarium tracking app for fishkeepers. Track your tanks, log maintenance activities, set reminders, and share with friends.</p>
+        <p>Track your tanks, log maintenance, monitor water parameters, set reminders, and share your aquariums with friends.</p>
 
-        <div class="contact">
-            <h2>Support</h2>
-            <p>For questions, feedback, or issues, please contact us at:<br><a href="mailto:yasartaymaz@windowslive.com">yasartaymaz@windowslive.com</a></p>
+        <div class="features">
+            <div class="feature">
+                <span class="feature-icon">🐠</span>
+                <div class="feature-text"><strong>Tank Management</strong><br>Keep track of all your aquariums in one place</div>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">📋</span>
+                <div class="feature-text"><strong>Maintenance Logs</strong><br>Record water changes, feeding, dosing, and more</div>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🔔</span>
+                <div class="feature-text"><strong>Smart Reminders</strong><br>Never miss a water change or feeding schedule</div>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">📸</span>
+                <div class="feature-text"><strong>Photo Gallery</strong><br>Document your aquarium journey with photos</div>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">👥</span>
+                <div class="feature-text"><strong>Share with Friends</strong><br>Let friends view your tanks and progress</div>
+            </div>
         </div>
 
-        <div class="contact" style="margin-top: 16px;">
-            <h2>Legal</h2>
-            <p><a href="privacy-policy.html">Privacy Policy (English)</a><br>
-            <a href="privacy-policy-tr.html">Gizlilik Politikası (Türkçe)</a></p>
+        <div class="badges">
+            <span class="badge">Coming soon on App Store</span>
         </div>
 
-        <p style="margin-top: 24px; font-size: 14px;"><a href="index-tr.html">Türkçe</a></p>
+        <div class="links">
+            <a href="support.html">Support</a>
+            <span class="divider">·</span>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <span class="divider">·</span>
+            <a href="index-tr.html">Türkçe</a>
+        </div>
     </div>
 </body>
 </html>
