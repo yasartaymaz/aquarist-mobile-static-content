@@ -21,51 +21,100 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="subtitle">Aquarist - Aquarium Tracker & Log</p>
+        <p class="subtitle">Aquarist - Aquarium Tracker &amp; Log</p>
 
-        <p><strong>Effective Date:</strong> March 27, 2026</p>
+        <p><strong>Effective Date:</strong> November 10, 2026</p>
 
-        <p>Aquarist ("we", "our", or "the app") is a personal aquarium tracking application. This Privacy Policy explains how we collect, use, and protect your information.</p>
+        <p>Aquarist ("we", "our", or "the app") is a personal aquarium tracking
+        application. It is developed and operated by Yaşar Taymaz, an individual
+        developer based in Türkiye, who is the data controller for the information
+        described here. This Privacy Policy explains what we collect, where it is
+        kept, and what you can do about it.</p>
+
+        <p><strong>What changed in version 2.0:</strong> the app no longer uses a
+        third-party backend. Your data now lives on servers we run ourselves in
+        Türkiye. Sign-in with a password has been removed and replaced with a
+        one-time code sent to your email address.</p>
 
         <h2>1. Information We Collect</h2>
-        <p>When you use Aquarist, we may collect the following information:</p>
         <ul>
-            <li><strong>Account Information:</strong> Email address and display name used to create and manage your account.</li>
-            <li><strong>Aquarium Data:</strong> Tank details, maintenance logs, water parameters, and other data you enter into the app.</li>
-            <li><strong>Photos:</strong> Images you upload for your aquarium tanks. Photos are stored securely on our servers.</li>
-            <li><strong>Device Information:</strong> Basic device identifiers for push notifications, if you enable them.</li>
+            <li><strong>Account information:</strong> your email address, display
+            name and language preference.</li>
+            <li><strong>Aquarium data:</strong> tanks, maintenance logs, water
+            parameters, reminders and anything else you type into the app.</li>
+            <li><strong>Photos:</strong> images you upload for your tanks.</li>
+            <li><strong>Push token:</strong> if you enable reminder notifications,
+            a device-specific notification token.</li>
+            <li><strong>Technical logs:</strong> our server records requests
+            (including IP address and time) for security and troubleshooting.</li>
+        </ul>
+        <p>We do not collect advertising identifiers, contacts, precise location
+        or analytics about how you move through the app.</p>
+
+        <h2>2. How You Sign In</h2>
+        <p>There is no password. You enter your email address, we email you a
+        one-time code, and you type that code in. You can also sign in with Apple
+        or Google; in that case the provider confirms your identity to us and we
+        receive your email address and a stable identifier, nothing else.</p>
+
+        <h2>3. Where Your Data Is Stored</h2>
+        <p>Your data is stored on our own servers, located in Türkiye, in a
+        PostgreSQL database; photos are stored as files on the same servers.
+        Connections between the app and the server are encrypted (HTTPS). Access
+        to the server is restricted to the developer.</p>
+        <p>Backups are taken daily and the most recent 14 backup sets are kept;
+        older ones are deleted automatically.</p>
+
+        <h2>4. Service Providers</h2>
+        <p>We do not sell or trade your information, and we never share it for
+        advertising. A small number of providers process data on our behalf so the
+        app can work:</p>
+        <ul>
+            <li><strong>Resend</strong> — delivers the sign-in code emails. It
+            receives your email address.</li>
+            <li><strong>Expo push service, Apple (APNs) and Google (FCM)</strong> —
+            deliver reminder notifications, if you enable them. They receive the
+            notification token and the notification text.</li>
+            <li><strong>Apple and Google</strong> — only if you choose to sign in
+            with them.</li>
+            <li><strong>Supabase</strong> — the backend used by version 1. Your
+            data was migrated away from it and that copy is now read-only. It will
+            be deleted once the migration is confirmed complete for all users.</li>
         </ul>
 
-        <h2>2. How We Use Your Information</h2>
-        <ul>
-            <li>To provide and maintain the app's features, including tank tracking, logging, and reminders.</li>
-            <li>To enable sharing features so you can share tank information with friends.</li>
-            <li>To send push notifications for maintenance reminders, if enabled.</li>
-            <li>To improve the app experience and fix issues.</li>
-        </ul>
+        <h2>5. Sharing a Tank</h2>
+        <p>You can invite another person to a tank as a caretaker. They can see
+        that tank and add logs and photos to it; they cannot see your other tanks
+        or your account details. Reminders are private to each person. Removing a
+        caretaker ends their access, while the logs and photos they added stay with
+        the tank.</p>
 
-        <h2>3. Data Storage and Security</h2>
-        <p>Your data is stored securely using Supabase, a cloud-based backend platform. We use industry-standard security measures including encrypted connections (HTTPS), row-level security policies, and secure authentication to protect your data.</p>
+        <h2>6. Keeping and Deleting Your Data</h2>
+        <p>We keep your data for as long as your account exists.</p>
+        <p>You can delete your account from Profile &gt; Delete account. Deletion is
+        <strong>reversible for 30 days</strong>: during that period the account is
+        disabled and can be restored by signing in again. After 30 days the account,
+        its tanks, logs and photos are permanently removed. Copies in backups
+        disappear as those backups rotate out, within about two weeks.</p>
 
-        <h2>4. Data Sharing</h2>
-        <p>We do not sell, trade, or share your personal information with third parties. Your aquarium data is only shared with other users when you explicitly choose to use the app's sharing features.</p>
+        <h2>7. Your Rights</h2>
+        <p>Under the Turkish Personal Data Protection Law (KVKK) and, where it
+        applies, the GDPR, you can ask what data we hold about you, ask for it to be
+        corrected, and ask for it to be deleted. Most of this you can do inside the
+        app; for anything else, write to the address below and we will answer.</p>
 
-        <h2>5. Your Rights</h2>
-        <p>You have the right to:</p>
-        <ul>
-            <li>Access and view all data associated with your account within the app.</li>
-            <li>Delete your account and all associated data at any time.</li>
-            <li>Opt out of push notifications through your device settings.</li>
-        </ul>
+        <h2>8. Children's Privacy</h2>
+        <p>Aquarist is not directed at children under 13 and we do not knowingly
+        collect personal information from them. If you believe a child has provided
+        us with personal data, contact us and we will remove it.</p>
 
-        <h2>6. Children's Privacy</h2>
-        <p>Aquarist is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data, please contact us so we can remove it.</p>
+        <h2>9. Changes to This Policy</h2>
+        <p>We may update this policy. Changes are posted on this page with a new
+        effective date; if a change is significant we will also mention it in the
+        app's release notes.</p>
 
-        <h2>7. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date.</p>
-
-        <h2>8. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, please contact us at:<br>
+        <h2>10. Contact Us</h2>
+        <p>Questions about this policy or your data:<br>
         <a href="mailto:yasartaymaz@windowslive.com">yasartaymaz@windowslive.com</a></p>
 
         <div class="links" style="margin-top: 40px; margin-bottom: 16px; text-align: center;">
