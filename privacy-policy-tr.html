@@ -21,51 +21,100 @@
 <body>
     <div class="container">
         <h1>Gizlilik Politikası</h1>
-        <p class="subtitle">Aquarist - Akvaryum Takip & Günlük</p>
+        <p class="subtitle">Aquarist - Akvaryum Takip &amp; Günlük</p>
 
-        <p><strong>Yürürlük Tarihi:</strong> 27 Mart 2026</p>
+        <p><strong>Yürürlük Tarihi:</strong> 10 Kasım 2026</p>
 
-        <p>Aquarist ("biz", "bizim" veya "uygulama"), kişisel akvaryum takip uygulamasıdır. Bu Gizlilik Politikası, bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklamaktadır.</p>
+        <p>Aquarist ("biz", "uygulama"), kişisel akvaryum takip uygulamasıdır.
+        Türkiye'de yaşayan bağımsız bir geliştirici olan Yaşar Taymaz tarafından
+        geliştirilip işletilmektedir; burada anlatılan veriler bakımından veri
+        sorumlusu kendisidir. Bu politika neyi topladığımızı, nerede tuttuğumuzu ve
+        bu konuda ne yapabileceğinizi anlatır.</p>
+
+        <p><strong>2.0 sürümünde değişen:</strong> uygulama artık üçüncü taraf bir
+        altyapı kullanmıyor. Verileriniz Türkiye'de kendi işlettiğimiz sunucularda
+        duruyor. Parolayla giriş kaldırıldı; yerine e-posta adresinize gönderilen
+        tek kullanımlık kod geldi.</p>
 
         <h2>1. Topladığımız Bilgiler</h2>
-        <p>Aquarist'i kullandığınızda aşağıdaki bilgileri toplayabiliriz:</p>
         <ul>
-            <li><strong>Hesap Bilgileri:</strong> Hesabınızı oluşturmak ve yönetmek için kullanılan e-posta adresi ve görünen ad.</li>
-            <li><strong>Akvaryum Verileri:</strong> Akvaryum detayları, bakım günlükleri, su parametreleri ve uygulamaya girdiğiniz diğer veriler.</li>
-            <li><strong>Fotoğraflar:</strong> Akvaryumlarınız için yüklediğiniz görseller. Fotoğraflar sunucularımızda güvenli bir şekilde saklanır.</li>
-            <li><strong>Cihaz Bilgileri:</strong> Anlık bildirimleri etkinleştirirseniz, temel cihaz tanımlayıcıları.</li>
+            <li><strong>Hesap bilgileri:</strong> e-posta adresiniz, görünen adınız
+            ve dil tercihiniz.</li>
+            <li><strong>Akvaryum verileri:</strong> tanklar, bakım kayıtları, su
+            değerleri, hatırlatıcılar ve uygulamaya girdiğiniz diğer her şey.</li>
+            <li><strong>Fotoğraflar:</strong> tanklarınız için yüklediğiniz
+            görseller.</li>
+            <li><strong>Bildirim anahtarı:</strong> hatırlatıcı bildirimlerini
+            açarsanız cihaza özel bir bildirim anahtarı.</li>
+            <li><strong>Teknik kayıtlar:</strong> sunucumuz güvenlik ve sorun
+            giderme için istekleri kaydeder (IP adresi ve zaman dahil).</li>
+        </ul>
+        <p>Reklam kimliği, rehber, hassas konum ya da uygulama içinde nasıl
+        dolaştığınıza dair analitik veri toplamıyoruz.</p>
+
+        <h2>2. Girişin İşleyişi</h2>
+        <p>Parola yok. E-posta adresinizi yazarsınız, size tek kullanımlık bir kod
+        göndeririz, onu girersiniz. Dilerseniz Apple veya Google ile de
+        girebilirsiniz; bu durumda sağlayıcı kimliğinizi bize doğrular ve yalnızca
+        e-posta adresinizle sabit bir kimlik numarası bize ulaşır.</p>
+
+        <h2>3. Verileriniz Nerede Duruyor</h2>
+        <p>Verileriniz Türkiye'de bulunan kendi sunucularımızda, bir PostgreSQL
+        veritabanında tutuluyor; fotoğraflar aynı sunucularda dosya olarak duruyor.
+        Uygulama ile sunucu arasındaki bağlantı şifreli (HTTPS). Sunucuya erişim
+        geliştiriciyle sınırlı.</p>
+        <p>Yedekler günlük alınıyor ve en yeni 14 yedek kümesi saklanıyor; daha
+        eskiler kendiliğinden siliniyor.</p>
+
+        <h2>4. Hizmet Sağlayıcılar</h2>
+        <p>Bilgilerinizi satmıyor, takas etmiyor ve reklam amacıyla hiçbir yerle
+        paylaşmıyoruz. Uygulamanın çalışabilmesi için az sayıda sağlayıcı bizim
+        adımıza veri işliyor:</p>
+        <ul>
+            <li><strong>Resend</strong> — giriş kodu e-postalarını iletir. Yalnız
+            e-posta adresinizi alır.</li>
+            <li><strong>Expo bildirim servisi, Apple (APNs) ve Google (FCM)</strong>
+            — hatırlatıcı bildirimlerini iletir (açtıysanız). Bildirim anahtarını ve
+            bildirim metnini alırlar.</li>
+            <li><strong>Apple ve Google</strong> — yalnızca onlarla girmeyi
+            seçerseniz.</li>
+            <li><strong>Supabase</strong> — 1. sürümün kullandığı altyapı.
+            Verileriniz oradan taşındı, o kopya artık salt okunur durumda. Taşımanın
+            tüm kullanıcılar için eksiksiz olduğu doğrulandığında silinecek.</li>
         </ul>
 
-        <h2>2. Bilgilerinizi Nasıl Kullanıyoruz</h2>
-        <ul>
-            <li>Akvaryum takibi, günlük kaydı ve hatırlatıcılar dahil olmak üzere uygulamanın özelliklerini sağlamak ve sürdürmek için.</li>
-            <li>Akvaryum bilgilerinizi arkadaşlarınızla paylaşmanızı sağlayan paylaşım özelliklerini etkinleştirmek için.</li>
-            <li>Etkinleştirilmişse bakım hatırlatıcıları için anlık bildirimler göndermek için.</li>
-            <li>Uygulama deneyimini iyileştirmek ve sorunları gidermek için.</li>
-        </ul>
+        <h2>5. Tank Paylaşımı</h2>
+        <p>Bir tanka bakıcı olarak başka birini davet edebilirsiniz. O kişi yalnız o
+        tankı görür, ona kayıt ve fotoğraf ekleyebilir; diğer tanklarınızı ya da
+        hesap bilgilerinizi göremez. Hatırlatıcılar kişiye özeldir. Bakıcıyı
+        çıkardığınızda erişimi biter, eklediği kayıt ve fotoğraflar tankta kalır.</p>
 
-        <h2>3. Veri Saklama ve Güvenlik</h2>
-        <p>Verileriniz, bulut tabanlı bir altyapı platformu olan Supabase kullanılarak güvenli bir şekilde saklanmaktadır. Verilerinizi korumak için şifreli bağlantılar (HTTPS), satır düzeyinde güvenlik politikaları ve güvenli kimlik doğrulama dahil olmak üzere endüstri standardı güvenlik önlemleri kullanıyoruz.</p>
+        <h2>6. Verilerin Saklanması ve Silinmesi</h2>
+        <p>Verilerinizi hesabınız var olduğu sürece saklarız.</p>
+        <p>Hesabınızı Profil &gt; Hesabı sil üzerinden silebilirsiniz. Silme
+        <strong>30 gün boyunca geri alınabilir</strong>: bu süre içinde hesap devre
+        dışıdır ve yeniden giriş yaparak canlandırılabilir. 30 günün sonunda hesap,
+        tanklar, kayıtlar ve fotoğraflar kalıcı olarak kaldırılır. Yedeklerdeki
+        kopyalar, yedekler sırayla düştükçe yaklaşık iki hafta içinde yok olur.</p>
 
-        <h2>4. Veri Paylaşımı</h2>
-        <p>Kişisel bilgilerinizi üçüncü taraflarla satmıyor, takas etmiyor veya paylaşmıyoruz. Akvaryum verileriniz, yalnızca uygulamanın paylaşım özelliklerini kullanmayı açıkça tercih ettiğinizde diğer kullanıcılarla paylaşılır.</p>
+        <h2>7. Haklarınız</h2>
+        <p>KVKK ve uygulandığı yerlerde GDPR kapsamında; hakkınızda hangi verilerin
+        tutulduğunu sorabilir, düzeltilmesini ve silinmesini isteyebilirsiniz.
+        Bunların çoğunu uygulama içinden kendiniz yapabilirsiniz; gerisi için
+        aşağıdaki adrese yazın, cevap veririz.</p>
 
-        <h2>5. Haklarınız</h2>
-        <p>Aşağıdaki haklara sahipsiniz:</p>
-        <ul>
-            <li>Uygulama içinde hesabınızla ilişkili tüm verilere erişim ve görüntüleme.</li>
-            <li>Hesabınızı ve ilişkili tüm verileri istediğiniz zaman silme.</li>
-            <li>Cihaz ayarlarınız aracılığıyla anlık bildirimlerden vazgeçme.</li>
-        </ul>
+        <h2>8. Çocukların Gizliliği</h2>
+        <p>Aquarist 13 yaşından küçüklere yönelik değildir ve onlardan bilerek
+        kişisel veri toplamayız. Bir çocuğun bize kişisel veri verdiğini
+        düşünüyorsanız bize yazın, kaldıralım.</p>
 
-        <h2>6. Çocukların Gizliliği</h2>
-        <p>Aquarist, 13 yaşın altındaki çocuklara yönelik değildir. 13 yaşın altındaki çocuklardan bilerek kişisel bilgi toplamıyoruz. Bir çocuğun bize kişisel veri sağladığını düşünüyorsanız, lütfen kaldırabilmemiz için bizimle iletişime geçin.</p>
+        <h2>9. Bu Politikadaki Değişiklikler</h2>
+        <p>Politikayı güncelleyebiliriz. Değişiklikler yeni yürürlük tarihiyle bu
+        sayfada yayımlanır; önemli bir değişiklik olursa uygulamanın sürüm notlarında
+        da belirtiriz.</p>
 
-        <h2>7. Bu Politikadaki Değişiklikler</h2>
-        <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Değişiklikler, güncellenmiş yürürlük tarihi ile birlikte bu sayfada yayınlanacaktır.</p>
-
-        <h2>8. İletişim</h2>
-        <p>Bu Gizlilik Politikası hakkında sorularınız varsa, lütfen bizimle iletişime geçin:<br>
+        <h2>10. İletişim</h2>
+        <p>Bu politika ya da verileriniz hakkında sorularınız için:<br>
         <a href="mailto:yasartaymaz@windowslive.com">yasartaymaz@windowslive.com</a></p>
 
         <div class="links" style="margin-top: 40px; margin-bottom: 16px; text-align: center;">
